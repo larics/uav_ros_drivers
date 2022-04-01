@@ -67,17 +67,6 @@ sources:
     scripts:
       - git submodule update --init --recursive
 sources_locked:
-  - repo: https://github.com/githubtraining/hellogitworld
-    name: sample_dependency
-    rev: ebbbf773431ba07510251bb03f9525c7bab2b13a
-    type: git
-    sparse_paths:
-      -
-    link:
-    links:
-      -
-    scripts:
-      -
   - repo: https://github.com/ethz-asl/ros_vrpn_client.git
     name: ros_vrpn_client
     rev: 7130ae92724ea0f06228d296185995a6ddcdf451

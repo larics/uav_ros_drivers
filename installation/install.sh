@@ -16,3 +16,6 @@ distro=`lsb_release -r | awk '{ print $2 }'`
 sudo apt-get update
 sudo apt-get install -y \
   ros-$ROS_DISTRO-pcl-ros
+  libglew-dev \
+  libglfw3-dev \
+  libtclap-dev
