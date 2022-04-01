@@ -17,7 +17,7 @@ sudo apt-get -y install git
 
 echo "clone uav_ros_stack"
 cd
-git clone https://github.com/larics/uav_ros_stack.git
+git clone --branch drivers https://github.com/larics/uav_ros_stack.git
 cd uav_ros_stack
 
 echo "running the main install.sh"
