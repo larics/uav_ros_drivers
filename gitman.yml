@@ -44,6 +44,28 @@ sources:
       -
     scripts:
       - git submodule update --init --recursive
+  - repo: https://github.com/ros-drivers/velodyne.git
+    name: velodyne
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/velodyne
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/larics/ouster_os0_driver
+    name: ouster_os0_driver
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/ouster_os0_driver
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
 sources_locked:
   - repo: https://github.com/githubtraining/hellogitworld
     name: sample_dependency
@@ -96,6 +118,28 @@ sources_locked:
     sparse_paths:
       -
     link: ros_packages/glog_catkin
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/ros-drivers/velodyne.git
+    name: velodyne
+    rev: f4c35a252394b0da6177ee0fe94b4c9f2c038da9
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/velodyne
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/larics/ouster_os0_driver
+    name: ouster_os0_driver
+    rev: 98458f068ad6c85bef4cce0eeb7cb68d5afe44af
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/ouster_os0_driver
     links:
       -
     scripts:
