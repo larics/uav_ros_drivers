@@ -14,5 +14,5 @@ distro=`lsb_release -r | awk '{ print $2 }'`
 [ "$distro" = "20.04" ] && ROS_DISTRO="noetic"
 
 sudo apt-get update
-sudo apt-get -y \
+sudo apt-get install -y \
   ros-$ROS_DISTRO-pcl-ros
