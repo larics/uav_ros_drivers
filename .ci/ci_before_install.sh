@@ -12,7 +12,9 @@ SHA=`git rev-parse HEAD`
 
 # get the current package name
 PACKAGE_NAME=${PWD##*/}
+COMMIT_ID="$GITHUB_SHA"
 
+sudo apt-get update
 sudo apt-get -y install git
 
 echo "clone uav_ros_stack"
@@ -20,14 +22,17 @@ cd
 git clone --branch drivers https://github.com/larics/uav_ros_stack.git
 cd uav_ros_stack
 
-echo "running the main install.sh"
+# install Gitman and lock the package to the current CI commit
+./installation/dependencies/gitman.sh
+gitman install --force
+echo "Lock $PACKAGE_NAME at commit $COMMIT_ID"
+cd ros_packages/$PACKAGE_NAME
+git checkout $COMMIT_ID
+cd ../../
+gitman lock $PACKAGE_NAME
+
+# Run the installation
 ./installation/install.sh
-
-gitman update --force
-
-# checkout the SHA
-cd ~/uav_ros_stack/.gitman/$PACKAGE_NAME
-git checkout "$SHA"
 
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
