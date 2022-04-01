@@ -1,0 +1,105 @@
+location: .gitman
+sources:
+  - repo: https://github.com/ethz-asl/ros_vrpn_client.git
+    name: ros_vrpn_client
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/ros_vrpn_client
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/ethz-asl/vrpn_catkin.git
+    name: vrpn_catkin
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/vrpn_catkin
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/catkin/catkin_simple.git
+    name: catkin_simple
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/catkin_simple
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/ethz-asl/glog_catkin.git
+    name: glog_catkin
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/glog_catkin
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+sources_locked:
+  - repo: https://github.com/githubtraining/hellogitworld
+    name: sample_dependency
+    rev: ebbbf773431ba07510251bb03f9525c7bab2b13a
+    type: git
+    sparse_paths:
+      -
+    link:
+    links:
+      -
+    scripts:
+      -
+  - repo: https://github.com/ethz-asl/ros_vrpn_client.git
+    name: ros_vrpn_client
+    rev: 7130ae92724ea0f06228d296185995a6ddcdf451
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/ros_vrpn_client
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/ethz-asl/vrpn_catkin.git
+    name: vrpn_catkin
+    rev: 25d8dbd3cc87a9d9f3df367b2a2fda63a26a73f8
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/vrpn_catkin
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/catkin/catkin_simple.git
+    name: catkin_simple
+    rev: 0e62848b12da76c8cc58a1add42b4f894d1ac21e
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/catkin_simple
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/ethz-asl/glog_catkin.git
+    name: glog_catkin
+    rev: 40a9edadd15c59f8b57dc947d0135b0a007ea10b
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/glog_catkin
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+default_group: ''
+groups:
+  -
