@@ -15,8 +15,15 @@ distro=`lsb_release -r | awk '{ print $2 }'`
 
 sudo apt-get update
 sudo apt-get install -y \
-  ros-$ROS_DISTRO-pcl-ros \
+  curl \
   libglew-dev \
   libglfw3-dev \
   libtclap-dev \
-  libpcap-dev
+  libpcap-dev \
+  ros-$ROS_DISTRO-pcl-ros \
+  ros-$ROS_DISTRO-realsense2-camera \
+  ros-$ROS_DISTRO-rgbd-launch \
+  ros-$ROS_DISTRO-openzen-sensor
+
+# Add realsens camera to udev/rules
+curl https://raw.githubusercontent.com/IntelRealSense/librealsense/master/config/99-realsense-libusb.rules >> /etc/udev/rules.d/99-realsense-libusb.rules
