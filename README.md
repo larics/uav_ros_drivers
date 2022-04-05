@@ -33,3 +33,4 @@ Drivers for various camera sensors.
 | Respository | Description | Build Status |
 |----|----|----|
 |[realsense2_camera](https://github.com/IntelRealSense/realsense-ros) - APT install | Packages for using Intel RealSense cameras (D400 series SR300 camera and T265 Tracking Module) with ROS.| N/A |
+| [zed_cpu_ros](https://github.com/willdzeng/zed_cpu_ros) | A simple zed camera driver which only use CPU and only publish left and right raw images and its camera info. | [![Build Status](https://travis-ci.org/willdzeng/zed_cpu_ros.svg?branch=master)](https://travis-ci.org/willdzeng/zed_cpu_ros) |

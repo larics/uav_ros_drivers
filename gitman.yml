@@ -66,6 +66,17 @@ sources:
       -
     scripts:
       - git submodule update --init --recursive
+  - repo: https://github.com/willdzeng/zed_cpu_ros
+    name: zed_cpu_ros
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/zed_cpu_ros
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
 sources_locked:
   - repo: https://github.com/ethz-asl/ros_vrpn_client.git
     name: ros_vrpn_client
