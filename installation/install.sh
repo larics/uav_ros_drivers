@@ -18,4 +18,5 @@ sudo apt-get install -y \
   ros-$ROS_DISTRO-pcl-ros \
   libglew-dev \
   libglfw3-dev \
-  libtclap-dev
+  libtclap-dev \
+  libpcap-dev
