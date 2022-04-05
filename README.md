@@ -17,6 +17,13 @@ Optitrack drivers and their dependencies.
 | [catkin_simple](https://github.com/catkin/catkin_simple) | A CMake wrapper for Catkin | N/A |
 | [glog_catkin](https://github.com/ethz-asl/glog_catkin) | A Catkin wrapper for the Google glog library | N/A |
 
+### Pozyx
+
+| Respository | Description | Build Status |
+|----|----|----|
+| [pozyx_ros](https://github.com/larics/pozyx_ros/) | A ROS Interface to Pozyx sensor | N/A |
+
+
 ### LiDAR
 
 Drivers for Velodyne VLP-16 and Ouster OS0 LiDARs.

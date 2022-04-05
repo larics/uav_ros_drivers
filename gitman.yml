@@ -77,6 +77,17 @@ sources:
       -
     scripts:
       - git submodule update --init --recursive
+  - repo: https://github.com/larics/pozyx_ros
+    name: pozyx_ros
+    rev: devel
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/pozyx_ros
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
 sources_locked:
   - repo: https://github.com/ethz-asl/ros_vrpn_client.git
     name: ros_vrpn_client
@@ -140,6 +151,28 @@ sources_locked:
     sparse_paths:
       -
     link: ros_packages/ouster_os0_driver
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/willdzeng/zed_cpu_ros
+    name: zed_cpu_ros
+    rev: 78c93afcc9751c5383eb03f607eb2d8ed15c4a9e
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/zed_cpu_ros
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/larics/pozyx_ros
+    name: pozyx_ros
+    rev: d43aca78193552690d76da57368bb30e646807f1
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/pozyx_ros
     links:
       -
     scripts:
