@@ -88,6 +88,17 @@ sources:
       -
     scripts:
       - git submodule update --init --recursive
+  - repo: https://github.com/Flova/ros_gremsy
+    name: ros_gremsy
+    rev: master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/ros_gremsy
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
 sources_locked:
   - repo: https://github.com/ethz-asl/ros_vrpn_client.git
     name: ros_vrpn_client
@@ -173,6 +184,17 @@ sources_locked:
     sparse_paths:
       -
     link: ros_packages/pozyx_ros
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/Flova/ros_gremsy
+    name: ros_gremsy
+    rev: 837c95e3977da5667fc80005519424bbf7638c98
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/ros_gremsy
     links:
       -
     scripts:
