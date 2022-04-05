@@ -1,5 +1,9 @@
 # UAV ROS drivers
 
+| Ubuntu 18.04  | Ubuntu 20.04|
+|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+ [![Melodic](https://github.com/larics/uav_ros_drivers/actions/workflows/melodic.yml/badge.svg?branch=main)](https://github.com/larics/uav_ros_drivers/actions/workflows/melodic.yml) | [![Noetic](https://github.com/larics/uav_ros_drivers/actions/workflows/noetic.yml/badge.svg?branch=main)](https://github.com/larics/uav_ros_drivers/actions/workflows/noetic.yml) |
+
 This packages integrates all driver components for the  [uav_ros_stack](https://github.com/lmark1/uav_ros_stack).  
 
 It serves as a collection of the commonly used UAV sensor and equipment drivers.
