@@ -23,7 +23,9 @@ sudo apt-get install -y \
   ros-$ROS_DISTRO-pcl-ros \
   ros-$ROS_DISTRO-realsense2-camera \
   ros-$ROS_DISTRO-rgbd-launch \
-  ros-$ROS_DISTRO-openzen-sensor
+  ros-$ROS_DISTRO-openzen-sensor \
+  dnsmasq \
+  linuxptp
 
 # Add realsens camera to udev/rules
 sudo curl https://raw.githubusercontent.com/IntelRealSense/librealsense/master/config/99-realsense-libusb.rules -o /etc/udev/rules.d/99-realsense-libusb.rules
