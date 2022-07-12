@@ -157,7 +157,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/ouster_os0_driver
     name: ouster_os0_driver
-    rev: d59e892d64e639775dc8ca855a6ae366d921db22
+    rev: dc9177a67080bec921dcd1288e6bc3c90ed7125f
     type: git
     sparse_paths:
       -
